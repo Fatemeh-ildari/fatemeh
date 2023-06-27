@@ -1,0 +1,389 @@
+#head_top {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/Pet\ Shop.jpg);
+  background-size: 100% auto;
+}
+#head_top > header {
+  width: inherit;
+  height: 100px;
+  /* background-color: blue; */
+  padding: 5px 20px;
+  position: relative;
+}
+#head_top > header > * {
+  height: 100%;
+}
+#head_top > header > h3,
+#head_top > header > div {
+  width: 25%;
+}
+#head_top > header > nav {
+  width: 50%;
+}
+#head_top > header > h3 {
+  font-size: 50px;
+  color: rgba(255, 184, 0, 1);
+  justify-content: center;
+  align-items: center;
+}
+/* ******************************************** */
+#head_top > header > nav > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#head_top > header > nav > ul > li {
+  color: white;
+}
+#head_top > header > nav > ul > li > a {
+  display: flex;
+  height: 100%;
+  padding: 0 20px;
+  font-size: 15px;
+  align-items: center;
+  text-transform: capitalize;
+  color: white;
+}
+#head_top > header > nav > ul > li:hover > .mega {
+  left: 0;
+}
+
+/* **** */
+#head_top .mega {
+  width: 100%;
+  height: 500px;
+
+  background-color: rgba(255, 184, 0, 1);
+  position: absolute;
+  top: 80px;
+  left: 2000px;
+  transition: 2s;
+  overflow: hidden;
+}
+
+#head_top .mega > li {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/Ellipse\ 4.png);
+}
+/* #head_top .mega>li>figure>img{
+    width: 50%;
+    justify-content: right;
+    align-items: last baseline;
+
+} */
+#head_top .mega > li > p {
+  width: 70%;
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.386);
+  font-size: 30px;
+  padding: 30px;
+}
+#head_top .mega > li > ul > figure > img {
+  width: 100%;
+  height: 400px;
+  margin-top: 40px;
+}
+#head_top .mega > li > ul > p {
+  font-size: 20px;
+  justify-content: center;
+  border: 1px solid black;
+  color: black;
+}
+/* *************** */
+
+.submenu {
+  background-color: rgba(255, 184, 0, 1);
+  width: 150%;
+  display: none;
+  border-radius: 15px;
+}
+.submenu > li {
+  height: 40px;
+}
+.submenu > li > a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.submenu > li > a:hover {
+  background-color: rgb(232, 193, 139);
+  color: rgb(66, 64, 61);
+}
+.menu:hover .submenu {
+  display: block;
+}
+
+/* **** */
+
+/* ************************************************************************* */
+#head_top > header > nav > ul > li > a:hover {
+  color: rgba(255, 184, 0, 1);
+}
+#head_top > header > nav > ul > li:first-of-type > a {
+  color: rgba(255, 184, 0, 1) !important;
+}
+/* ********************************************************* */
+#head_top > header > div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#head_top > header > div > a {
+  display: flex;
+  width: 200px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 15px;
+}
+/* ******************** */
+#head_bottom {
+  width: 100%;
+  height: calc(100vh - 100px);
+
+  padding: 100px 200px;
+}
+#head_bottom > h1 {
+  font-size: 6vw;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+#head_bottom > h2 {
+  font-size: 3vw;
+  text-transform: uppercase;
+  color: rgb(255, 170, 0);
+  text-align: center;
+}
+
+#head_bottom > div {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+#head_bottom > div > a {
+  padding: 10px 25px;
+  background-color: rgb(255, 208, 88);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0 50px;
+  border-radius: 10px;
+}
+#head_bottom > div > a:nth-last-of-type(2) {
+  background-color: white;
+  color: black;
+}
+
+/* ************end******************** */
+#pet {
+  width: 100%;
+  min-height: 100vh;
+}
+#pet > * {
+  width: 50%;
+  min-height: 100vh;
+
+  padding: 50px;
+}
+#pet > div:first-of-type > div {
+  width: 100%;
+
+  min-height: 100px;
+}
+#pet > div:first-of-type > div:first-of-type > h2 {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+#pet > div:first-of-type > div:first-of-type > h2::before {
+  content: "petshop";
+  color: rgba(255, 184, 0, 1);
+  font-size: 39px;
+  display: flex;
+  width: 100%;
+  margin: 30px;
+}
+#pet > div:first-of-type > div:first-of-type > h2::after {
+  content: "";
+  display: flex;
+  width: 100px;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  margin: 40px;
+}
+#pet > div:first-of-type > div:last-of-type > p {
+  font-size: 20px;
+  line-height: 40px;
+  padding: 15px 50px;
+}
+#pet > div:last-of-type {
+  justify-content: space-between;
+  align-items: center;
+}
+#pet > div:last-of-type > figure {
+  width: 30%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#pet > div:last-of-type > figure:nth-last-of-type(1) {
+  height: 300px;
+}
+#pet > div:last-of-type > figure:nth-last-of-type(2) {
+  height: 500px;
+}
+#pet > div:last-of-type > figure > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* *************************** */
+#count {
+  width: 100%;
+  padding: 50px;
+
+  justify-content: space-between;
+}
+#count > div {
+  flex-basis: 300px;
+  height: 250px;
+  background-color: rgba(255, 184, 0, 1);
+  background-image: url(../img/job562-nunoon-04-e.jpg);
+  background-size: cover;
+}
+#count > div > span {
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#count > div > span:first-of-type {
+  font-size: 80px;
+}
+#count > div > span:last-of-type {
+  font-size: 50px;
+}
+#count > div > span:hover {
+  background-color: rgba(0, 0, 0, 0.385);
+  color: aliceblue;
+}
+/* ****************************end********************************************* */
+#cat {
+  width: 100%;
+  min-height: 100vh;
+}
+#cat > * {
+  width: 50%;
+  min-height: 100vh;
+
+  padding: 50px;
+}
+#cat > div:first-of-type > div {
+  width: 100%;
+  min-height: 100px;
+}
+#cat > div:first-of-type > div:first-of-type > h2 {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+#cat > div:first-of-type > div:first-of-type > h2::before {
+  content: "petshop";
+  color: rgb(255, 179, 0);
+  font-size: 39px;
+  display: flex;
+  width: 100%;
+  margin: 30px;
+}
+#cat > div > p {
+  color: rgb(255, 173, 22);
+}
+#cat > div:first-of-type > div:first-of-type > h2::after {
+  content: "";
+  display: flex;
+  width: 100px;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  margin: 40px;
+}
+#cat > div:first-of-type > div:last-of-type > p {
+  font-size: 90px;
+
+  line-height: 40px;
+  padding: 15px 50px;
+}
+#cat > div:last-of-type {
+  justify-content: space-between;
+  align-items: center;
+}
+#cat > div:last-of-type > figure {
+  width: 30%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#cat > div:last-of-type > figure:nth-last-of-type(1) {
+  height: 400px;
+}
+#cat > div:last-of-type > figure:nth-last-of-type(2) {
+  height: 500px;
+}
+#cat > div:last-of-type > figure:nth-last-of-type(3) {
+  height: 360px;
+}
+#cat > div:last-of-type > figure > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ************************************************** */
+#count1 {
+  width: 100%;
+  padding: 50px;
+
+  justify-content: space-between;
+}
+#count1 > div {
+  flex-basis: 300px;
+  height: 250px;
+  background-color: rgba(255, 184, 0, 1);
+  background-image: url(../img/v567-mynt-doodles-01.jpg);
+  background-size: cover;
+}
+#count1 > div > span {
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#count1 > div > span:first-of-type {
+  font-size: 50px;
+}
+#count1 > div > span:last-of-type {
+  font-size: 50px;
+}
+#count1 > div > span:hover {
+  background-color: rgba(0, 0, 0, 0.385);
+  color: aliceblue;
+}
+/* *-************************************************************************* */
+#foot {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+#foot > h3 {
+  font-size: 50px;
+  color: rgba(255, 184, 0, 1);
+  justify-content: center;
+  align-items: center;
+}
